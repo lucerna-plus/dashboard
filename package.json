@@ -1,7 +1,9 @@
 {
   "name": "@lucerna-plus/dashboard",
   "scripts": {
-    "start": "webpack serve",
+    "start": "webpack serve --port 8083",
+    "start:8081": "webpack serve --port 8083",
+    "start:8085": "webpack serve --port 8087",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
